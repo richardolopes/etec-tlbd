@@ -75,34 +75,34 @@ values('Gabriel Otávio Moreira', 'Rua Vinícius de Morais 460', '29337669', 'gabr
 -- MM
 
 insert into tb_vendas(id_cliente, data, valor_total, desconto, valor_pago)
-values('1', '30/07/2001', '201.00', '201.00', '0.0')
+values('1', '30/07/2001', '380.74', '201.00', '0.0')
 
 insert into tb_vendas(id_cliente, data, valor_total, desconto, valor_pago)
-values('2', '01/06/1999', '821.36', '10.00', '0.0')
+values('2', '01/06/1999', '1520.95', '10.00', '0.0')
 
 insert into tb_vendas(id_cliente, data, valor_total, desconto, valor_pago)
-values('3', '28/02/2017', '50.00', '0.0', '25.00')
+values('3', '28/02/2017', '380.74', '0.0', '25.00')
 
 insert into tb_vendas(id_cliente, data, valor_total, desconto, valor_pago)
-values('4', '05/09/2015', '256.01', '20.00', '15.00')
+values('4', '05/09/2015', '1520.95', '20.00', '15.00')
 
 insert into tb_vendas(id_cliente, data, valor_total, desconto, valor_pago)
 values('5', '10/12/1998', '362.25', '152.35', '210.15')
 
 insert into tb_vendas(id_cliente, data, valor_total, desconto, valor_pago)
-values('6', '22/08/2016', '5000.00', '100.00', '350.65')
+values('6', '22/08/2016', '9900.00', '100.00', '350.65')
 
 insert into tb_vendas(id_cliente, data, valor_total, desconto, valor_pago)
-values('7', '23/04/2014', '125.96', '12.54', '14.68')
+values('7', '23/04/2014', '9900.00', '12.54', '14.68')
 
 insert into tb_vendas(id_cliente, data, valor_total, desconto, valor_pago)
-values('8', '12/05/2011', '8.36', '0.00', '8.0')
+values('8', '12/05/2011', '1806.32', '0.00', '8.0')
 
 insert into tb_vendas(id_cliente, data, valor_total, desconto, valor_pago)
-values('9', '03/06/2003', '50.00', '10.0', '25.00')
+values('9', '03/06/2003', '380.74', '10.0', '25.00')
 
 insert into tb_vendas(id_cliente, data, valor_total, desconto, valor_pago)
-values('10', '10/01/2018', '550.00', '10.0', '250.00')
+values('10', '10/01/2018', '1806.32', '10.0', '250.00')
 
 -- MM
 
@@ -118,6 +118,12 @@ values('Placa de video Gtx 1080', '1806.32', '1', '1')
 insert into tb_hardware(descricao, preco, qtde, qtde_mini)
 values('Memoria ram 8gb 2400', '380.74', '1', '1')
 
+-- MM
+
+insert into tb_vendas_itens(id_venda, id_hardware, qtde_item, total_itens)
+values('1', '4', '1', '1')
+
 select*from tb_clientes
 select*from tb_vendas
 select*from tb_hardware
+select*from tb_vendas_itens
